@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background-image: url(https://macnoob.ru/wp-content/uploads/2020/06/yosemite.jpg);
+    background-size: 100%;
+    
+}
+header{
+    user-select: none;
+    background: linear-gradient(#f0f0f0,#b4b4b4);
+    background-color: #E4E4E4;
+    border: 1px solid #b1b1b1;
+    box-shadow: 0 0 4px 2px #000;
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.logo img{
+    width: 20px;
+}
+
+.header_leftNav{
+    font-size: 15px;
+    nav{
+        ul{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            li{
+                margin: 0 0 0 15px;
+            }
+        }
+    }
+}
+
+.context-menu{
+    display: none;
+    background: white;
+    font-weight: normal;
+    width: 200px;
+    min-height: 50px;
+    box-shadow: 0 0 20px 2px rgb(51, 51, 51);
+    position: absolute;
+    .pad{
+        padding: 5px;
+    }
+    ul{
+        list-style: none;
+        padding: 5px 5px 5px 5px;
+    }
+    li{
+        padding: 5px 5px 5px 5px;
+        border-left: 4px solid transparent;
+        cursor: pointer;
+        width: 100%;
+    }
+    li:hover{
+        background: #4788F6;
+    }
+}
+
+.desktop{
+    width: 100%;
+    height: 100vh;
+}
+.desktop-files{
+    display: flex;
+}
+.wrapper-file{
+    padding: 10px;
+}
+.file{
+    user-select: none;
+    transition-duration: 0.2s;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    min-height: 50px;
+    img{
+        width: 50px;
+    }
+    border-radius: 3px;
+    input{
+        padding: 5px;
+        color: white;
+        font-size: 15px;
+        font-weight: normal;
+        text-shadow: #000 2px 1px 3px;
+        color: rgb(255, 255, 255);
+        background: transparent;
+        width: 70px;
+        border: none;
+    }
+}
+
+.file:hover{
+    cursor: context-menu;
+    background: rgba(0, 0, 0, 0.479);
+    border: rgb(75, 75, 75);
+}
+
+.selectFile{
+    background: rgba(0, 0, 0, 0.336);
+    border: rgb(75, 75, 75);
+}
